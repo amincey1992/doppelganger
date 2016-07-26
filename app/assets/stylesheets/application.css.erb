@@ -1,0 +1,969 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+
+@media screen and (min-width: 776px) {
+    {
+      display: none;
+    }
+}
+
+* {
+  padding:0;
+  margin:0;
+}
+
+
+body {
+  background: #D2FDD9;
+}
+
+header {
+  
+}
+
+header.affix {
+  top:0;
+  width:100%;
+  z-index:2000;
+}
+
+header.affix + #myCarousel {
+  margin-top: 55px;
+}
+
+header .nav_pic {
+  opacity:0;
+}
+
+header.affix .nav_pic {
+  opacity:1;
+  transition: opacity .3s ease-in;
+}
+
+header .nav_title {
+  opacity:0;
+}
+
+header.affix .nav_title {
+  opacity:1;
+  transition: opacity .3s ease-in;
+}
+
+header.affix nav {
+  margin-bottom: 2px;
+}
+
+header nav .hide {
+  opacity: 0;
+}
+
+header.affix nav .hide {
+  opacity:1;
+  transition: opacity .3s ease-in;
+}
+
+#page_one {
+
+}
+
+#page_two {
+  background-color: #0DB43E;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+#page_three {
+  background-image:url(<%= asset_path "fibers.png"%>);
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+#page_four {
+  margin-top: 40px;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+#page_five {
+  background-color: #0DB43E;
+  margin-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.moving {
+
+}
+
+#log {
+ 
+}
+
+.nav_title {
+  font-family: 'Righteous', cursive;
+  font-size: 15px;
+  color:black;
+}
+#navbar {
+  background-color:#0DB43E;
+  color: ;
+}
+
+.nav_pic {
+  margin-top: 2px;
+}
+
+#nav-main .hide {
+  display: none;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #0DB43E;
+    background-color: black;
+    font-family: 'Righteous', cursive;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:black;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+nav {
+  padding-top: -20px;
+  z-index: 100000;
+  border: 2px solid black;
+}
+
+nav a {
+
+}
+
+.navbar {
+  background-color: #0DB43E;
+  height: 56px;
+}
+
+
+
+.menu_items {
+
+}
+
+.large_screen {
+  margin-top: -40px;
+  margin-left: 40px;
+}
+
+.icon {
+  z-index: 100;
+
+ 
+}
+
+.icon:hover {
+
+}
+
+.login {
+  float: right;
+  top: 0;
+  margin-top: -25px;
+  display: inline;
+  color: #0DB43E;
+  overflow: auto;
+  margin-right: 10px;
+}
+
+#nav_logo {
+
+}
+
+.logo {
+top:0;
+margin-top: -20px;
+margin-bottom: -12px;
+overflow: auto;
+}
+
+.logo2 {
+  box-shadow: 2px 2px 3px black;
+  float: right;
+  z-index: 0;
+  margin-right: 10%;
+
+
+
+}
+
+@media screen and (min-width: 480px) {
+    #annoy {
+        margin-left: 0; !important
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .logo2 {
+        display: none; !important
+    }
+}
+
+#annoy {
+  margin-left: 10%;
+ overflow: auto;
+ z-index: 10;
+
+}
+
+
+.jumbotron {
+  background-image:url(<%= asset_path "fibers.png"%>);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+
+.jumbotron h1 {
+  font-size: 48px;  
+  font-weight: bold;
+  margin-top:1px;
+  margin-bottom:5px;
+  line-height:1em;
+  font-family: 'Righteous', cursive;
+}
+
+.jumbotron p {
+  font-family: 'Righteous', cursive;
+  text-decoration: italic;
+  color:black;
+  text-shadow: 2px 2px 10px #0DB43E;
+
+}
+
+.space {
+  margin-bottom: 700px;
+}
+
+form {
+  font-size: 200%;
+
+}
+
+form h2 {
+    text-decoration: underline;
+
+
+}
+
+form ol {
+  list-style: none;
+}
+
+.personal {
+  padding: 10px;
+  display: inline-block;
+
+}
+
+.recover {
+  font-size: 15px;
+  float: right;
+  margin-top: 5px;
+  overflow: auto;
+}
+
+#sign {
+
+}
+
+.sign_in {
+  background-image:url(<%= asset_path "fibers.png"%>);
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 2000px;
+  border: 5px solid #0DB43E;
+  display: inline-block;
+  color: #0DB43E;
+  width: 80%;
+  -webkit-border-radius: 10px;
+border-radius: 10px;
+  
+}
+
+input[type="text"] {
+     width: 100%; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
+
+.sign_up {
+  background-image:url(<%= asset_path "fibers.png"%>);
+  border: 5px solid #0DB43E;
+  color: #0DB43E;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+}
+
+.remember_me {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.submit {
+  background:#0DB43E;
+  color:black;
+  text-transform: uppercase;  
+  float: right;
+  padding: 2px;
+  margin-top: 10px;
+  -webkit-border-radius: 10px;
+border-radius: 10px;
+  margin-top: 40px;
+
+}
+
+#submit:hover{
+  background:black;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0DB43E;
+    border:2px solid #D2FDD9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown, .dropup {
+    position: absolute;
+}
+
+.dropdown_styles:hover {
+
+}
+/*Register/sign up form*/
+
+#about {
+  
+
+}
+
+.about_h1 {
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: -3px;
+  text-align: center;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+}
+
+.about_p {
+  background:#0DB43E;
+  font-family: 'Righteous', cursive;
+  font-size: 15px;
+  border: 2px solid black;
+  padding: 10px;
+  line-height: 2;
+  margin-right: auto;
+  margin-right: auto;
+
+}
+
+.math {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  height: -170px;!important
+  width:60%;
+  max-width: 100%;
+  text-align: center;
+  display: table-cell;
+    vertical-align: middle
+  
+}
+
+#space {
+  margin-top: 500px;
+  margin-bottom: -617px;
+  color: #D2FDD9
+}
+
+#space_two {
+  
+}
+
+
+
+.rating {
+  width: 100%
+  border:2px solid black;
+  display: inline-block; !important
+  font-family: 'Righteous', cursive;
+}
+
+.rating_one {
+  overflow: auto;
+  padding:10px;
+  margin-left: 30px;
+  margin-right: auto;
+  margin-top: 20px;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+  -webkit-border-radius: 10px;
+border-radius: 10px;
+
+
+}
+
+.rating_two {
+  overflow: auto;
+  padding:10px;
+  margin-right: 30px;
+  margin-left: auto; 
+  margin-top: 30px;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+  -webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+.rating_three {
+  overflow: auto;
+  padding:10px;
+  margin-left: 30px;
+  margin-right: auto;
+  margin-top: 30px;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+  -webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+.rating_four {
+  overflow: auto;
+  padding:10px;
+  margin-right: 30px;
+  margin-left: auto;
+  margin-top: 30px;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+  -webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+.rating_box {
+  background-image:url(<%= asset_path "iphone.png"%>);
+  background-repeat: no-repeat;
+  background-image: 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  padding: 10px;
+  
+}
+
+.download {
+  text-align: center;
+  margin-bottom: 400px;
+}
+
+.store {
+  background-color:#0DB43E;
+  padding: 20px; 
+}
+
+.download_title {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  padding-bottom: 10px;
+  margin-bottom: -3px;
+  padding-top: 10px;
+  text-align: center;
+  color:#0DB43E;
+  text-shadow: 2px 2px 10px black;
+}
+
+.apple {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  margin-right: 2em;
+}
+
+.android {
+  margin-left: 10px;
+  margin-top: -1px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+
+
+
+
+/*contact page styles*/
+
+
+
+
+
+
+/*sign in form*/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0DB43E;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+a:hover {
+  color: #0DB43E;
+}
+
+.form {
+  background-image:url(<%= asset_path "fibers.png"%>);
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #0DB43E;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #0DB43E;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background:#0DB43E ;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #0DB43E;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+
+.foot {
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+/*
+Contact Form*/
+
+
+
+
+
+
+
+
+
+
+input, textarea, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+input, textarea:focus {
+  outline: none;
+}
+
+
+.full {
+  width: 100%;
+}
+
+.indent {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-top: 10%;
+  margin-bottom: -60px;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  border-bottom: 50px solid #0DB43E;
+  max-width: 600px;
+   text-align: center;
+
+}
+.header h1 {
+  font-family: 'Righteous', cursive;
+  display: table;
+  margin: 0 auto;
+  font-size:40px;
+  text-shadow: 2px 2px 10px black;
+  font-weight: normal;
+  color: #0DB43E;
+
+}
+
+.form {
+  margin-top: 5%;
+}
+.form input[type="text"], .form textarea {
+ 
+  background: transparent;
+  padding: 7px;
+  color: #0DB43E;
+  -webkit-transition: border 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.form input[type="text"]:focus, .form textarea:focus {
+  border-color: #0DB43E;
+}
+.form textarea {
+  height: 200px;
+}
+.form button[type="submit"] {
+  font-size: 1.3em;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #0DB43E;
+  border-bottom: 3px solid #0DB43E;
+  width: 94%;
+}
+.form button[type="submit"]:hover {
+  cursor: pointer;
+  background: #0DB43E;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+::-moz-input-placeholder {
+  color: #0DB43E;
+}
+
+:-moz-input-placeholder {
+  color: #ffffff;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-top: -20px;
+  height: 200px;
+  margin-bottom: -50px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 200px;
+  color: #0DB43E;
+  opacity: .8;
+  background-size:cover;
+  background-position:center;
+  line-height:1em;
+  font-family: 'Righteous', cursive;
+
+
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333c40+0,323e3e+1,374141+2,374141+2,313b3c+3,364041+4,303d3d+5,354140+6,313b3e+7,363f41+8,363d42+9,323d3d+9,353f41+10,323c3e+12,354041+13,2f3c3d+14,313e3d+14,383f41+15,303c3d+16,364141+17,313c3e+19,374143+20,323d3d+21,364042+22,303d3d+23,364040+24,080808+24,0db43e+24,0db43e+33,080808+33,a1c2a7+34,a1c2a7+68,a1c2a6+68,0db43e+68,0db43e+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333c40+0,323e3e+1,374141+2,374141+2,313b3c+3,364041+4,303d3d+5,354140+6,313b3e+7,363f41+8,363d42+9,323d3d+9,353f41+10,323c3e+12,354041+13,2f3c3d+14,313e3d+14,383f41+15,303c3d+16,364141+17,313c3e+19,374143+20,323d3d+21,364042+22,303d3d+23,364040+24,080808+24,080808+24,080808+24,0db43e+24,0db43e+26,a1c2a7+29,a1c2a7+68,a1c2a6+68,0db43e+68,0db43e+100 */
+background: #333c40; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #333c40 0%, #323e3e 1%, #374141 2%, #374141 2%, #313b3c 3%, #364041 4%, #303d3d 5%, #354140 6%, #313b3e 7%, #363f41 8%, #363d42 9%, #323d3d 9%, #353f41 10%, #323c3e 12%, #354041 13%, #2f3c3d 14%, #313e3d 14%, #383f41 15%, #303c3d 16%, #364141 17%, #313c3e 19%, #374143 20%, #323d3d 21%, #364042 22%, #303d3d 23%, #364040 24%, #080808 24%, #080808 24%, #080808 24%, #0db43e 24%, #0db43e 26%, #a1c2a7 29%, #a1c2a7 68%, #a1c2a6 68%, #0db43e 68%, #0db43e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #333c40 0%,#323e3e 1%,#374141 2%,#374141 2%,#313b3c 3%,#364041 4%,#303d3d 5%,#354140 6%,#313b3e 7%,#363f41 8%,#363d42 9%,#323d3d 9%,#353f41 10%,#323c3e 12%,#354041 13%,#2f3c3d 14%,#313e3d 14%,#383f41 15%,#303c3d 16%,#364141 17%,#313c3e 19%,#374143 20%,#323d3d 21%,#364042 22%,#303d3d 23%,#364040 24%,#080808 24%,#080808 24%,#080808 24%,#0db43e 24%,#0db43e 26%,#a1c2a7 29%,#a1c2a7 68%,#a1c2a6 68%,#0db43e 68%,#0db43e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #333c40 0%,#323e3e 1%,#374141 2%,#374141 2%,#313b3c 3%,#364041 4%,#303d3d 5%,#354140 6%,#313b3e 7%,#363f41 8%,#363d42 9%,#323d3d 9%,#353f41 10%,#323c3e 12%,#354041 13%,#2f3c3d 14%,#313e3d 14%,#383f41 15%,#303c3d 16%,#364141 17%,#313c3e 19%,#374143 20%,#323d3d 21%,#364042 22%,#303d3d 23%,#364040 24%,#080808 24%,#080808 24%,#080808 24%,#0db43e 24%,#0db43e 26%,#a1c2a7 29%,#a1c2a7 68%,#a1c2a6 68%,#0db43e 68%,#0db43e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333c40', endColorstr='#0db43e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.carousel-inner > .item {
+
+ 
+    -webkit-transition: 1s ease-in-out left;
+    -moz-transition: 1s ease-in-out left;
+    -o-transition: 1s ease-in-out left;
+    transition: 1.form input[type="text"], .form textareas ease-in-out left;
+}
+
+.btn-primary {
+  background-color: #0DB43E;
+  border-color: black;
+  color: black;
+}
+
+.carousel h1 {
+  color: #0DB43E;
+  font-size: 30px;
+  opacity: 1;
+  background-color: 8, 8, 8, .9;
+  text-shadow: 2px 2px 4px black;
+}
+
+/*.carousel .item:nth-child(1){
+  background-image: url(images/twins.jpg);
+
+}
+
+
+.carousel .item:nth-child(2){
+  background-image: url(images/twins_two.jpg);
+}
+
+.carousel .item:nth-child(3){
+  background-image: url(images/twins_three.jpg);
+}
+*/
+
+
+
+
+.connect {
+  text-align:center;
+   font-family: 'Righteous', cursive;
+   text-shadow: 2px 2px 2px black;
+  color: #0DB43E;
+  background-image:url(<%= asset_path "fibers.png"%>);
+  border: 1px solid black;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+
